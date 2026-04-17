@@ -1,6 +1,6 @@
 # 📚 FocusFlow — Plataforma Integrada de Estudos
 
-FocusFlow é uma plataforma web completa voltada para otimização dos estudos, combinando técnicas consagradas de produtividade e memorização em uma única interface. Desenvolvido como Trabalho de Conclusão de Curso (TCC) em Ciência da Computação.
+FocusFlow é uma plataforma web completa voltada para otimização dos estudos, combinando técnicas consagradas de produtividade e memorização em uma única interface. Desenvolvido como Trabalho de Conclusão de Curso (TCC) em Desenvolvimento de Sistemas.
 
 🔗 **[Acessar o FocusFlow](https://focus-flow-frontend-dusky.vercel.app)** · **[Repositório do Backend](https://github.com/Weslley-322/FocusFlow-Backend)**
 
