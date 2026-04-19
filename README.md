@@ -1,73 +1,91 @@
-# React + TypeScript + Vite
+# 📚 FocusFlow — Plataforma Integrada de Estudos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FocusFlow é uma plataforma web completa voltada para otimização dos estudos, combinando técnicas consagradas de produtividade e memorização em uma única interface. Desenvolvido como Trabalho de Conclusão de Curso (TCC) em Desenvolvimento de Sistemas.
 
-Currently, two official plugins are available:
+🔗 **[Acessar o FocusFlow](https://focus-flow-frontend-dusky.vercel.app)** · **[Repositório do Backend](https://github.com/Weslley-322/FocusFlow-Backend)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Pomodoro Timer** — Temporizador com ciclos de foco e pausa configuráveis, contador de sessões e barra de progresso circular
+- **Flashcards com SM-2** — Sistema de revisão espaçada baseado no algoritmo SM-2, com agendamento automático das revisões por nível de dificuldade
+- **Mapas Mentais** — Editor interativo de mapas mentais com nós arrastáveis, conexões manuais, paleta de cores e edição inline
+- **Metas de Estudo** — Criação e acompanhamento de metas com progresso animado e mensagens motivacionais
+- **Gerenciamento de Matérias e Tópicos** — Organização hierárquica do conteúdo estudado
+- **Autenticação completa** — Cadastro, login com JWT e verificação de e-mail
+- **Modo escuro** — Suporte completo a dark mode em todos os componentes
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧪 Conta Demo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Para explorar o sistema sem precisar criar uma conta:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| Campo | Valor |
+|-------|-------|
+| E-mail | demofocusflow12@gmail.com |
+| Senha | 12345yt67 |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🛠️ Tecnologias
+
+- **React + TypeScript** — Base da interface
+- **Vite** — Bundler e servidor de desenvolvimento
+- **Tailwind CSS** — Estilização utilitária
+- **Zustand** — Gerenciamento de estado global
+- **React Flow** — Editor de mapas mentais
+- **Axios** — Comunicação com a API
+
+---
+
+## 🚀 Rodando localmente
+
+### Pré-requisitos
+
+- Node.js 18+
+- Backend do FocusFlow rodando localmente
+
+### Instalação
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/Weslley-322/FocusFlow-Frontend.git
+
+# 2. Instale as dependências
+cd FocusFlow-Frontend
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Configuração do ambiente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Crie um arquivo `.env` na raiz do projeto:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```env
+VITE_API_URL=http://localhost:3000/api
 ```
+
+### Executando
+
+```bash
+npm run dev
+```
+
+O frontend iniciará na porta `3001` por padrão.
+
+---
+
+## 🌐 Infraestrutura de produção
+
+| Camada | Serviço |
+|--------|---------|
+| Frontend | Vercel |
+| Backend | Render |
+| Banco de dados | TiDB Cloud Serverless |
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Weslley** como TCC do curso de Desenvolvimento de Sistemas.
