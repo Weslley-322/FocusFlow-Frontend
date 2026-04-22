@@ -123,7 +123,7 @@ export function FlashcardCard({
 
         {/* VERSO */}
         <div
-          className="absolute inset-0 rounded-xl shadow-md flex flex-col overflow-hidden"
+          className="absolute inset-0 rounded-xl shadow-md flex flex-col overflow-visible"
           style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
         >
           <div
@@ -138,8 +138,8 @@ export function FlashcardCard({
             </div>
           </div>
 
-          <div className="flex-1 bg-gray-50 dark:bg-gray-700 rounded-b-xl px-5 py-4 flex flex-col justify-between -mt-4">
-            <p className="text-center text-gray-800 dark:text-gray-100 font-medium text-base mt-2 whitespace-pre-wrap">
+          <div className="bg-gray-50 dark:bg-gray-700 rounded-b-xl px-5 py-4 flex flex-col justify-between -mt-4">
+            <p className="text-center text-gray-800 dark:text-gray-100 font-medium text-base mt-2 whitespace-pre-wrap break-words">
               {flashcard.back}
             </p>
             {!isReviewMode && (
